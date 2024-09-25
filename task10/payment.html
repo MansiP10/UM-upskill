@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/cart.css">
+  <title>CSS Project</title>
+</head>
+<body>
+    <div class="order">
+        <div class="leftdiv">
+            <div class="payment">
+            <h4 class="Checkouthead">Checkout</h4>
+            <h1 class="contacthead">Contact Details</h1>
+            <label for="Email">Email ID</label>
+            <input type="email" name="email" placeholder="John Doe" id="emailtxt">
+            <h1 class="contacthead">Payment</h1>
+            <div class="paymentform">
+                <div class="payment-opt">
+                    <button type="button"  class="btncard payopt">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    <span>Card</span></button>
+                    <button type="button"class="btncrypto payopt">
+                      <i class="fa fa-btc" aria-hidden="true"></i>
+                      <span>Crypto</span></button>
+                    <button type="button" class="btnbank payopt">
+                      <i class="fa fa-bank"></i>
+                      <span>Bank</span></button>
+                    <button type="button" class="btnmore payopt">
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <label for="" class="lbl">Card Number</label>
+                <input type="text" placeholder="John Doe" class="cardno">
+                <div class="info">
+                    <div class="card-info">
+                      <div class="expiry info">
+                          <label for=""class="lbl">Expiry</label> 
+                          <input type="text" placeholder="MM/YY" class="txt1">
+                      </div>
+                      <div class="cvc info">
+                          <label for="" class="lbl1">CVC</label>
+                          <input type="text" placeholder="***" class="txt1">
+                      </div>
+                    </div>
+                    <div class="card-info">
+                      <div class="country info">
+                        <label for="" class="lbl">Country</label>
+                        <select name="brands" id="brands" class="txt1">
+                          <option value="brands1">India</option>
+                          <option value="brands2"> A</option>
+                          <option value="brands3">B</option>
+                          <option value="brands4"> C</option>
+                        </select>
+                        <!-- <input type="list" placeholder="Select" class="txt1" value="India"> -->
+                      </div>
+                      <div class="zip info">
+                          <label class="lbl1"for="">ZIP</label>
+                          <input type="text" placeholder="XXXXX" class="txt1">
+                      </div>
+                    </div>
+                </div>             
+            </div>
+            </div>
+        </div>
+        <div class="order-summery">
+            <div class="rightdiv">
+                <h1>Order Summary</h1>
+                <div class="cost-detail">
+                    <div class="right-subdiv">
+                        <div><strong>Enter Coupon Code</strong></div>
+                    </div>
+                    <div class="apply-coupon right-subdiv">
+                        <input type="text" placeholder="COUPON CODE" class="txtcoupon">
+                        <button class="btnapply">Apply Coupon</button>
+                    </div>
+                    <div class="sub-total right-subdiv">
+                        <div>Sub Total</div>
+                        <div>₹4,700</div>
+                    </div>
+                    <div class="sub-total right-subdiv">
+                        <div>Taxes(if applicable)</div>
+                        <div>₹199</div>
+                    </div>
+                    <div class="sub-total right-subdiv">
+                        <div>Discount</div>
+                        <div>₹0</div>
+                    </div>
+                    <div class="total right-subdiv">
+                        <div>Total</div>
+                        <div>₹4,999</div>
+                    </div>
+                </div>
+                <a href="payment.html" class="add-product-btn">Pay Now ₹4,999</a>
+                <div class="pay-option">
+                    <div><img src="image/secure.png" alt="secure"></div>
+                    <div><img src="image/razorpay.png" alt="razorpay"></div>
+                    <div><img src="image/secure1.png" alt="secure1"></div>
+                </div> 
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

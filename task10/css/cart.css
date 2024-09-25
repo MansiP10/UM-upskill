@@ -1,0 +1,277 @@
+/* universal css */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    font-family: sans-serif;
+    flex-direction: column;
+    padding: 3vh 10vw;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    font-family: sans-serif;
+    position: relative;
+}
+.order{
+    display: flex;
+    justify-content: stretch;
+    background-color: #e7eaf6;
+    align-items:flex-start;
+    font-family: sans-serif;
+}
+.order-summery{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 0%;
+    background-color: #e7eaf6;
+    height:100vh;
+    width: 40vw;
+}
+.shoppinghead{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+}
+th{
+    color: darkgray;
+}
+
+hr{
+   position: relative;
+   top: 40px;width: 49vw;
+   border-top: 1px solid #e6e4e4;
+   font-weight: lighter;
+}
+.leftdiv table{
+    width: 50vw;
+}
+.leftdiv th ,td{ 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    padding: 10px 19px;
+    font-weight: bolder;
+}
+.rightdiv{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 27vw;
+    height: auto;
+    gap: 15px;
+}
+.rightdiv >h1{
+    font-family: sans-serif;
+    font-size: 2em;
+    margin: 10px;
+}
+.cost-detail{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #e6e4e4;
+    background-color: white;
+    row-gap: 15px;
+}
+
+.right-subdiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    justify-items: stretch;
+    gap: 10px;
+}
+
+.pay-option{
+    display: flex;
+}
+
+.pay-option img{
+    width: 85px;
+    height: 40px;
+}
+.txtcoupon {
+    flex: 1;
+    border-radius: 4px;
+    border:0.5px solid #e6e4e4;
+    text-align: center;
+    font-size: 12px;
+    margin: 2px 0px;
+    padding: 15px;
+}
+.btnapply{
+    border-radius: 4px; 
+    border:0.1px solid #006ce8;
+    background-color: #006ce8;
+    color: white;
+    padding: 15px;
+
+}
+.add-product-btn{
+    border-radius: 10px;
+    border:none;
+    color: white;
+    background-color: orange;
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em 4em;
+}
+.pay-option{
+    display: flex;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.sub-total{
+    font-weight: lighter;
+    font-size: small;
+    color: rgb(194, 192, 192);
+}
+.total{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.payment{
+    padding: 10px 40px;
+}
+.payment >h4{
+    color: #c4c1c1;
+    font-weight: bolder;
+}
+
+.payment >h1{
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin: 15px 0px;
+}
+label{
+    display: block;
+    font-weight: bold;
+}
+.contacthead{
+    font-size:20px;
+    font-weight: bold;
+}
+#emailtxt{
+    width:100%;
+    height:2rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #d8dae0;
+    padding: 5px;
+    padding-left: 20px;
+    background-color: #e7eaf6;
+}
+.leftdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:stretch;
+    background-color: white;
+    width: 60%;
+    height: 100%;
+}
+.paymentform{
+    background-color:white;
+    padding: 10px;
+    border: 1px solid #d8dae0;
+    border-radius: 10px;
+}
+.payment-opt{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: space-around;
+    align-items: center;
+}
+    .btncard , .btncrypto ,.btnbank {
+        flex: 1;
+        height: 13vh ;
+        border:1px solid #d8dae0;
+        border-radius: 10px;
+        margin: 4PX;
+        padding: 15px;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+    
+    .btncard:hover , .btncrypto:hover,.btnbank:hover , .btnmore:hover{
+        border: 1px solid orange;
+        color: orange;
+    }
+    .btnmore{
+        flex-shrink: auto;
+        width: 10%;
+        height: 13vh ;
+        border-radius: 10px;
+        border: 1px solid #d8dae0;
+        background-color: white; 
+    }
+    .payopt{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4em;
+        justify-content: space-around;
+        align-items:flex-start;
+        padding-left: 30px;
+        color: #838486;
+        margin-bottom: 20px;
+    }
+    .cardno{
+        margin: 10px 0px;
+        width: 95%;
+        height:2rem;
+        border-radius: 10px;
+        border: 1px solid #d8dae0;
+        padding: 5px;
+        padding-left: 20px;
+        background-color: #e7eaf6;
+    }
+    .txt1{
+        width: 90%;
+        height:2rem;
+        border-radius: 10px;
+        border: 1px solid #d8dae0;
+        padding: 5px;
+        padding-left: 20px;
+        background-color: #e7eaf6;
+        margin: 15px 0px;
+    }
+    #brands{
+        height: 3em;
+        color: gray;
+    }
+    .card-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .info{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
