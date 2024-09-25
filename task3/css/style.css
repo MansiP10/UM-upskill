@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 10vh 25vw;
+}
+
+.container img{
+    display: block;
+    width: 100%;
+}
+
+.container button {
+    background: linear-gradient(45deg, #ff6f61, #ffcc00); /* Gradient background */
+    color: white;                /* Font color */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 2vw;              /* Font size relative to viewport width */
+    font-weight: bold;           /* Font weight */
+    padding: 1vw;            /* Padding relative to viewport width */
+    border: none;                /* Remove default border */
+    text-align: center;          /* Center text */
+    text-decoration: none;       /* Remove underline from text */
+    cursor: pointer;             /* Change cursor on hover */
+    box-sizing: border-box;      /* Include padding and border in dimensions */
+    display: block;
+    width: 100%;    
+}
+
+.container button:hover {
+    background: linear-gradient(45deg, #ffcc00, #ff6f61); /* Reverse gradient on hover */
+}

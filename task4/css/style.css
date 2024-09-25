@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.header{
+    position: absolute;
+    display: block;
+    margin: 3vh 10vw;
+    width: 80vw;
+}
+
+.header img{
+    float: left;
+}
+
+nav ul li{
+    justify-content: center;
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    
+}
+nav ul{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.header button{
+    float: right;
+    margin: 10px 20px;
+    background-color: #F0F8FF;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+    color: #00B9E8;
+    cursor: pointer;
+}
+
+.hero{
+    position: absolute;
+    display: block;
+    margin: 20vh 15vw;
+}
+.hero-content{
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+.hero-content h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    margin: 10px 0px;
+    color: rgb(95, 94, 94);
+}
+
+.hero-content h1:nth-child(3){
+    color: #00B9E8;
+}
+
+.hero-content p{
+    color: rgb(184, 181, 181);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.hero-content button{
+    background-color: #00B9E8;
+    border-radius: 10px;
+    border: none;
+    padding: 20px 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: #F0F8FF;
+    cursor: pointer;
+}
+
+.hero-image{
+    display: inline-block;
+    width: 50%;
+    float: right;
+
+}

@@ -1,0 +1,53 @@
+body{
+    background-color: #FE6F5E;
+}
+
+.head{
+    color: darkblue;
+}
+
+#bglime{
+    background-color: lime;
+}
+
+h2>span{
+    color: red;
+}
+
+p{
+    color: white;
+}
+
+#para{
+    color: green;
+}
+
+p >span{
+    color: black;
+    font-size: larger;
+}
+
+ul li {
+    color: white;
+}
+
+ul li >span{
+    color: blue;
+    text-decoration: underline;
+}
+
+ul li:first-child >span{
+    background-color: yellow;
+}
+
+ul li:last-child >span{
+    background-color: blueviolet;
+}
+
+ol li:nth-child(2){
+   color: blue;
+}
+
+ol li:nth-child(3){
+    color: red;
+ }
