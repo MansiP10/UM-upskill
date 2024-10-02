@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Enrollment Form</title>
+</head>
+<body>
+    <h1>User Enrollment Form</h1>
+    <form id="userData">
+        <label for="userFullName">Your Name: </label>
+        <input type="text" name="fullName" id="userFullName" />
+        <br/><br/>
+        <label for="phoneNumber">Contact Number: </label>
+        <input type="tel" name="phone" id="phoneNumber" />
+        <br/><br/>
+        <label for="userEmail">Email Address: </label>
+        <input type="email" name="email" id="userEmail" />
+        <br/><br/>
+        <label for="">Your Gender: </label><br/>
+        <input type="radio" name="gender" id="" value="Male">Male<br/>
+        <input type="radio" name="gender" id="" value="Female">Female<br/>
+        <input type="radio" name="gender" id="" value="Other">Other<br/>
+        <br />
+        <label for="">Have you completed your education?: </label><br/>
+        <input type="radio" name="education" id="" value="Graduate">Graduate<br/>
+        <input type="radio" name="education" id="" value="Undergraduate">Undergraduate<br/>
+        <input type="radio" name="education" id="" value="Not Completed">Not Completed<br/>
+        <br />
+        <label for="">Current Employment Status:</label><br/>
+        <select name="" id="selectEmploymentType">
+            <option value="Employed Full Time">Employed Full Time</option>
+            <option value="Employed Part Time">Employed Part Time</option>
+            <option value="Unemployed">Unemployed</option>
+        </select>
+        <br/><br/>
+        <label for="">What motivates you to learn web developement?:</label><br/>
+        <textarea name="" id="learningMotivation" rows="5" cols="60"></textarea>
+        <br/><br/>
+        <label for="">How did you hear about Upskill Mafia?:</label><br/>
+        <input type="checkbox" name="sources" value="Instagram" />Instagram<br/>
+        <input type="checkbox" name="sources" value="LinkedIn" />LinkedIn<br/>
+        <input type="checkbox" name="sources" value="Twitter" />Twitter<br/>
+        <input type="checkbox" name="sources" value="Friends or Family" />Friends or Family<br/>
+        <input type="checkbox" name="sources" value="Other" />Other<br/>
+        <br /><br/>
+        <input type="checkbox" name="termAndCondition" value="I confirm the accuracy of the information provided">I confirm the accuracy of the information provided
+        <br /><br/>
+        <input type="submit" value="Submit Information" id="submitBtn"/>
+    </form>
+    <section id="EnrollmentData"></section>
+    <script src="script.js"></script>
+</body>
+</html>
