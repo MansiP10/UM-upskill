@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="top-nav">
+            <input type="text" placeholder="Search...">
+            <select>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+            </select>
+            <div class="profile">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg" alt="Profile" height="30px" width="30px" />
+                <span>Admin</span>
+            </div>
+        </div>
+        <div class="metrics">
+            <div class="card">
+                <h3>Total Users</h3>
+                <p>40,000+</p>
+                <span class="indicator up">Up 8%</span>
+            </div>
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p>10,000+</p>
+                <span class="indicator down">Down 3%</span>
+            </div>
+            <div class="card">
+                <h3>Total Sales</h3>
+                <p>$89,000+</p>
+                <span class="indicator up">Up 5%</span>
+            </div>
+        </div>
+        <canvas id="salesChart" width="400" height="200"></canvas>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Location</th>
+                    <th>Date & Time</th>
+                    <th>Pieces Sold</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Apple Watch</td>
+                    <td>6096 Marjolaine Landing</td>
+                    <td>2024-10-01 12:00</td>
+                    <td>423</td>
+                    <td>$34,295</td>
+                    <td>Delivered</td>
+                </tr>
+                <tr>
+                    <td>Galaxy S21</td>
+                    <td>1234 Elm St.</td>
+                    <td>2024-10-05 15:30</td>
+                    <td>150</td>
+                    <td>$12,000</td>
+                    <td>Pending</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
