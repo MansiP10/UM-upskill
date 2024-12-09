@@ -10,6 +10,8 @@ const preview = document.getElementById('gradient-preview');
 const cssCode = document.getElementById('css-code');
 const generateBtn = document.getElementById('generate-btn');
 
+let currentGradient = ''; // Variable to store the current gradient CSS.
+
 const updateGradient = () => {
   const type = gradientType.value;
   const colorStart = color1.value;
@@ -22,27 +24,29 @@ const updateGradient = () => {
       ? `linear-gradient(${angle}deg, ${colorStart}, ${colorEnd})`
       : `radial-gradient(circle, ${colorStart}, ${colorEnd})`;
 
-  preview.style.background = gradient;
-  preview.style.animation = `gradient-animation ${animationSpeed}s infinite alternate`;
-
-  const generatedCSS = `
+  currentGradient = `
     background: ${gradient};
     animation: gradient-animation ${animationSpeed}s infinite alternate;
   `;
-  cssCode.value = generatedCSS;
+
+  preview.style.background = gradient;
+  preview.style.animation = `gradient-animation ${animationSpeed}s infinite alternate`;
 
   directionValue.textContent = `${angle}°`;
   color1Value.textContent = colorStart;
   color2Value.textContent = colorEnd;
 };
 
+// Event listeners for real-time gradient preview
 gradientType.addEventListener('change', updateGradient);
 color1.addEventListener('input', updateGradient);
 color2.addEventListener('input', updateGradient);
 direction.addEventListener('input', updateGradient);
 
-
-generateBtn.addEventListener('click', updateGradient);
+// Event listener to show generated CSS on button click
+generateBtn.addEventListener('click', () => {
+  cssCode.value = currentGradient; // Display the generated CSS only on button click
+});
 
 const style = document.createElement('style');
 style.innerHTML = `
@@ -53,4 +57,5 @@ style.innerHTML = `
 `;
 document.head.appendChild(style);
 
+// Initialize the gradient preview
 updateGradient();
