@@ -1,6 +1,8 @@
 const gradientType = document.getElementById('gradient-type');
 const color1 = document.getElementById('color1');
+const color1Value = document.getElementById('color1-value');
 const color2 = document.getElementById('color2');
+const color2Value = document.getElementById('color2-value');
 const direction = document.getElementById('direction');
 const directionValue = document.getElementById('direction-value');
 const speed = document.getElementById('speed');
@@ -8,11 +10,7 @@ const preview = document.getElementById('gradient-preview');
 const cssCode = document.getElementById('css-code');
 const generateBtn = document.getElementById('generate-btn');
 
-direction.addEventListener('input', () => {
-  directionValue.textContent = `${direction.value}°`;
-});
-
-generateBtn.addEventListener('click', () => {
+const updateGradient = () => {
   const type = gradientType.value;
   const colorStart = color1.value;
   const colorEnd = color2.value;
@@ -31,9 +29,20 @@ generateBtn.addEventListener('click', () => {
     background: ${gradient};
     animation: gradient-animation ${animationSpeed}s infinite alternate;
   `;
-
   cssCode.value = generatedCSS;
-});
+
+  directionValue.textContent = `${angle}°`;
+  color1Value.textContent = colorStart;
+  color2Value.textContent = colorEnd;
+};
+
+gradientType.addEventListener('change', updateGradient);
+color1.addEventListener('input', updateGradient);
+color2.addEventListener('input', updateGradient);
+direction.addEventListener('input', updateGradient);
+
+
+generateBtn.addEventListener('click', updateGradient);
 
 const style = document.createElement('style');
 style.innerHTML = `
@@ -43,3 +52,5 @@ style.innerHTML = `
 }
 `;
 document.head.appendChild(style);
+
+updateGradient();
