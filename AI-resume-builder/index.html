@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <h1>AI-Powered Resume Builder</h1>
+    <p>Create a professional resume effortlessly with AI-driven insights and personalized templates.</p>
+  </header>
+
+  <main>
+    <section class="builder-container">
+      <!-- Step 1: User Info -->
+      <div id="step1" class="builder-step active">
+        <h2>Step 1: Enter Your Details</h2>
+        <form id="user-info-form">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" placeholder="Your Name" required>
+          
+          <label for="job-title">Job Title</label>
+          <input type="text" id="job-title" placeholder="e.g., Software Engineer" required>
+          
+          <label for="industry">Industry</label>
+          <input type="text" id="industry" placeholder="e.g., Tech, Finance, Healthcare" required>
+          
+          <button type="button" class="next-btn">Next</button>
+        </form>
+      </div>
+
+      <!-- Step 2: Skills -->
+      <div id="step2" class="builder-step">
+        <h2>Step 2: Skills & Achievements</h2>
+        <div id="skills-container">
+          <label>Skills</label>
+          <input type="text" id="skills-input" placeholder="Add your skills (e.g., JavaScript)">
+          <button type="button" id="add-skill-btn">Add Skill</button>
+          <ul id="skills-list"></ul>
+        </div>
+        <button type="button" class="prev-btn">Back</button>
+        <button type="button" class="next-btn">Next</button>
+      </div>
+
+      <!-- Step 3: Templates -->
+      <div id="step3" class="builder-step">
+        <h2>Step 3: Select a Template</h2>
+        <div id="templates-container">
+          <div class="template">
+            <img src="template1.png" alt="Template 1">
+            <button class="select-template-btn">Select</button>
+          </div>
+          <div class="template">
+            <img src="template2.png" alt="Template 2">
+            <button class="select-template-btn">Select</button>
+          </div>
+        </div>
+        <button type="button" class="prev-btn">Back</button>
+        <button type="button" id="generate-resume-btn">Generate Resume</button>
+      </div>
+
+      <!-- Step 4: Export -->
+      <div id="step4" class="builder-step">
+        <h2>Your Resume is Ready!</h2>
+        <p>Download your resume or sync with LinkedIn to share it easily.</p>
+        <button id="download-pdf-btn">Download PDF</button>
+        <button id="sync-linkedin-btn">Sync with LinkedIn</button>
+        <button type="button" class="prev-btn">Back</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 AI Resume Builder. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
