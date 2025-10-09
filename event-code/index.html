@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard Event Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="button">Press Any Key to Get Event Info</button>
+  <div class="container hidden">
+    <div class="key-display">
+      <h4>event.key</h4>
+      <div id="eventKey" class="display-box">-</div>
+    </div>
+    <div class="key-display">
+      <h4>event.keyCode (old)</h4>
+      <div id="eventKeyCode" class="display-box">-</div>
+    </div>
+    <div class="key-display">
+      <h4>event.code (new)</h4>
+      <div id="eventCode" class="display-box">-</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

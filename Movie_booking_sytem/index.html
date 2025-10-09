@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Booking</h1>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-group">
+            <label for="movie">Pick a movie:</label>
+            <select id="movie">
+                <option value="The Big Lebowski ($10.00)">The Big Lebowski ($10.00)</option>
+                </select>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color black"></div>
+                <span>N/A</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color cyan"></div>
+                <span>Selected</span>
+            </div>
+            <div class="legend-color red"></div>
+            <span>Occupied</span>
+        </div>
+
+        <div id="seating-area"></div>
+
+        <p id="selected-seats"></p>
+
+        <button id="book-now">Book Now</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

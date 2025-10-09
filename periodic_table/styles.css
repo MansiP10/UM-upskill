@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+}
+
+.periodic-table-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.periodic-table {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 5px;
+  justify-content: center;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: relative;
+  transition: transform 0.5s, box-shadow 0.2s;
+}
+
+.element:hover {
+  transform: scale(1.2);
+  z-index: 1;
+  padding: 5px 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.highlighted {
+  background: #ffd700;
+  color: #945700;
+}
+
+.danger {
+  background: #f8caca;
+  color: #d60024;
+}
+
+.info{
+  background: #d8f8ff;
+  color: #00758c;
+}
+.blue{
+  background: #e2eeff;
+  color: #0060f0;
+}
+.purple{
+  background-color: #d5b5f3;
+  color: #6232ec;
+}
+.atomic-number {
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.symbol {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+
+.name {
+  font-size: 10px;
+  color: #666;
+  padding:5px;
+}
+
+.atomic-mass {
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+
+.element:hover .atomic-mass{
+  display: block;
+}

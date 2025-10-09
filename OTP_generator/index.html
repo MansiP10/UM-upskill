@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP Generator and Verification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>OTP Generator and Verification</h1>
+    <button id="generateOtpBtn">Generate OTP</button>
+    <p id="otpDisplay" class="hidden">Your OTP: <span id="otpValue"></span></p>
+    <input type="text" id="otpInput" placeholder="Enter OTP">
+    <button id="verifyOtpBtn">Verify OTP</button>
+    <p id="message"></p>
+    <p id="timerDisplay" class="hidden">Regenerate OTP After: <span id="timer"></span> seconds</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

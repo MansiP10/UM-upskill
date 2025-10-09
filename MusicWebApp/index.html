@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Web App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Music Web App</h1>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for a song or artist..." />
+        <button id="searchButton">Search</button>
+      </div>
+    </header>
+    <main>
+      <div id="musicResults" class="music-results"></div>
+    </main>
+    <footer id="musicPlayer" class="music-player hidden">
+      <div id="trackInfo"></div>
+      <audio id="audioPlayer" controls></audio>
+      <button id="closeButton">Close</button>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

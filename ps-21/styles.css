@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.header {
+    flex: 1;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+.stats {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.stat-item .icon {
+    font-size: 2rem;
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 15px;
+    opacity: 0.5;
+}
+
+.icon.blue {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+
+.icon.yellow {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+.icon.purple {
+    background-color: #9c27b0;
+    color: #ffffff;
+}
+
+.icon.pink {
+    background-color: #e91e63;
+    color: #ffffff;
+}
+
+.icon.green {
+    background-color: #1ee979;
+    color: #ffffff;
+}
+
+.icon.lime-blue {
+    background-color: #1ebae9;
+    color: #ffffff;
+}
+
+.stat-item h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.image-item {
+    position: relative;
+    text-align: center;
+    width: 22%;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-item p {
+    position: absolute;
+    bottom: 5px;
+    left: 10%;
+    font-size: 0.9rem;
+    color: #ffffff;
+    border-radius: 4px;
+    white-space: wrap;
+}
+
+.first-img img {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.last-img img {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

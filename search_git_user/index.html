@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub User Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Search GitHub User</h1>
+    <div class="search-box">
+      <input type="text" id="username" />
+      <button onclick="searchUser()">Search</button>
+    </div>
+    <div class="git-info">
+    <div id="user-details"></div>
+    <div class="git-work">
+        <p id="repo-count"></p>
+        <div id="repos" class="repos"></div>
+    </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

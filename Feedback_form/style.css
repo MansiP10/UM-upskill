@@ -1,0 +1,66 @@
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+margin: 0;
+padding: 20px;
+background-color: #f9f9f9;
+}
+.container {
+max-width: 400px;
+margin: auto;
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+position: relative;
+overflow: hidden;
+}
+.hidden {
+display: none;
+}
+.buttons {
+display: flex;
+justify-content: space-around;
+margin-bottom: 20px;
+}
+.button {
+padding: 10px 20px;
+border: 1px solid #ddd;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+background: #fff;
+transition: all 0.3s ease;
+position: relative;
+}
+.button:hover {
+background-color: #f0f0f0;
+}
+.emoji {
+margin-right: 5px;
+font-size: 18px;
+position: relative;
+display: inline-block;
+transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.emoji.fly-up {
+transform: scale(2);
+opacity: 0;
+}
+textarea {
+width: 90%;
+margin: 10px 0;
+padding: 10px;
+font-size: 14px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+button.submit-btn {
+background-color: black;
+color: white;
+padding: 10px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}

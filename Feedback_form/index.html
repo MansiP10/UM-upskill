@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Feedback UI</title>
+ <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+ <!-- Initial Page -->
+ <div id="rate-experience">
+ <h2>Rate your experience</h2>
+ <div class="buttons">
+ <div class="button" onclick="handleRating('Bad', this)">
+ <span class="emoji">😔</span> Bad
+ </div>
+ <div class="button" onclick="handleRating('Decent', this)">
+ <span class="emoji">🙂</span> Decent
+ </div>
+ <div class="button" onclick="handleRating('Love it', this)">
+ <span class="emoji">😍</span> Love it!
+ </div>
+ </div>
+ </div>
+
+ <!-- Feedback Form -->
+ <div id="feedback-form" class="hidden">
+ <textarea id="feedback" placeholder="Tell us more (optional)"></textarea>
+ <button class="submit-btn" onclick="submitFeedback()">Submit your feedback</button>
+ </div>
+
+ <!-- Thank You Message -->
+ <div id="thank-you" class="hidden">
+ <h2>Thank you!</h2>
+ <p>Your feedback helps us improve, appreciate the time you took to send us the feedback!</p>
+ <button class="submit-btn" onclick="resetFeedback()">Done</button>
+ </div>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>

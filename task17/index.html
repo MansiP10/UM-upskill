@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Booking Web App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="logo">Logo</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="user-act">
+        <button class="user-button">Username</button>
+        <button class="logout-button">
+          <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Left Section -->
+      <div class="left-section">
+        <div class="added-items">
+          <h3>Added Items</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Service Name</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody id="cart-items">
+              <tr>
+                <td colspan="3">
+                    <div class="no-item"><img src="information.png" alt="help icon"><p>No Items Added</p><p>Add items to the cart from the services bar</p></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="total-amount">
+            <div>Total Amount</div>
+            <div> ₹ <span id="total-amount">0</span></div>
+          </div>
+        </div>
+        <div class="book-now-form">
+          <h3>Book Now</h3>
+          <div class="nametxt">
+            <label for="name">Full Name</label>
+            <input type="text" id="full-name" name="name" placeholder="Full Name" />
+          </div>
+          <div class="email-phone">
+            <div class="sub-txt">
+              <label for="email">Email ID</label>
+              <input type="email" id="email" name="email" placeholder="Email ID" />
+            </div>
+            <div class="sub-txt">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone" placeholder="Phone Number" />
+            </div>
+          </div>
+          <button id="book-now-button" style="opacity: 0.5;">Book Now</button>
+          <div id="book-status" class="book-status hidden"></div>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right-section">
+        <h3>Browse Our Services</h3>
+        <p>
+          Click on the add to cart button to add the services to your cart or
+          press skip.
+        </p>
+        <hr>
+        <div id="service-display">
+          <!-- Service details will be dynamically added here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

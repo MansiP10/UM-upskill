@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+form h2 {
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Event List */
+.event-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+  margin: 0 0 10px;
+}
+
+.event-card p {
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  form,
+  .event-card {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  button {
+    padding: 8px;
+  }
+}

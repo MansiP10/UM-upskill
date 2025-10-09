@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+}
+
+.container {
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto;
+}
+
+span {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.banner {
+    background: transparent;
+    color: black;
+    padding: 50px 20px;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.item:nth-child(1) {
+    border-radius: 12px 0px 0px 0px;
+}
+.item:nth-child(2) {
+    border-radius: 12px 12px 0px 0px;
+}
+.item:nth-child(3),
+.item:nth-child(4) {
+    border-radius: 0px 12px 0px 0px;
+}

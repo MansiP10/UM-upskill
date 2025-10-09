@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+  
+body {
+    background: url('forestBackground.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: rgb(54, 54, 54);
+}
+
+.signup-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid rgba(15, 15, 15, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(27, 27, 27, 0.5);
+}
+
+.password-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.password-wrapper label {
+    font-size: 0.9rem;
+}
+
+button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #00c897;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00a678;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social-links a {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.login-link {
+    font-size: 0.9rem;
+    color: #333232;
+}
+
+.login-link a {
+    color: #00c897;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+h1 {
+    font-size: 1.5rem;
+}
+
+button {
+    font-size: 0.9rem;
+}
+}

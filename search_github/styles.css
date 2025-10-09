@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(69, 4, 129);
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.user-form{
+    width: 90%;
+    max-width: 700px;
+}
+
+.user-form #search_user{
+    width: 100%;
+    display: block;
+    background-color: rgb(43, 14, 70);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(154,160,185,0.05), 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.user-form input:focus{
+    outline: none;
+}
+
+.user-form input::placeholder{
+    color: rgba(255, 255, 255, 0.774);
+}
+
+.card{
+    max-width: 800px;
+    background-color: rgb(43, 14, 70);
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154,160,185,0.05), 0 15px 40px rgba(0,0,0,0.1);
+    display: flex;
+    padding: 3rem;
+    margin: 0,1.5rem;
+}
+
+.avatar{
+    border-radius: 50%;
+    border: 10px solid rgb(69, 4, 129);
+    height: 150px;
+    width: 150px;
+}
+
+.user-details{
+    color: white;
+    margin-left: 2rem;
+}
+
+.user-details h2{
+    margin-top: 0;
+}
+
+.user-details ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-details ul li{
+    display: flex;
+    align-items: center;
+}
+
+.user-details ul li strong{
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repo{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(69, 4, 129);
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}

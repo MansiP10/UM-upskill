@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://evenifiwalkalone.com/wp-content/uploads/2020/05/EvilInTheWorld.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-box {
+    animation: animate 4s linear infinite;
+    border-radius: 8px;
+    border: 1px solid white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: rgb(255, 253, 253);
+    text-shadow: 0 0 5px rgba(192, 26, 26, 0.7);
+}
+
+.input-box {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #ccc;
+}
+
+input {
+    width: 95%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid #444;
+    border-radius: 80px;
+    color: rgb(15, 14, 14);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid red;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: rgb(17, 1, 1);
+    color: white;
+    border: none;
+    border-radius: 80px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.strength-meter {
+    height: 5px;
+    margin-top: 5px;
+    border-radius: 2px;
+    background: #fcfcfc;
+    overflow: hidden;
+    position: relative;
+}
+
+.strength-meter::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+@keyframes animate{
+    0%{
+        background: linear-gradient(180.3deg, rgba(151, 11, 11, 0.692) 10.6%, rgb(255, 0, 0) 97.7%);
+    }
+    100%{
+        background: linear-gradient(180.3deg, rgb(0, 0, 0) 10.6%, rgba(255, 0, 0, 0.692) 97.7%);
+    }
+}

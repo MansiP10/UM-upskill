@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f1f8f2;
+  color: rgb(10, 10, 10);
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.user-table {
+  margin-bottom: 20px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#usersList {
+  margin-top: 10px;
+}
+
+.user-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.total-wealth {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}

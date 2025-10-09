@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a030338;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+.user-act {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-button{
+    flex: 1;
+    background-color: rgb(151, 226, 245);
+    color: #4f85be;
+    padding: 10px;
+    border: none;
+    border-radius: 80px 0px 0px 80px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.logout-button{
+    padding: 10px;
+    border: none;
+    background-color: rgb(250, 122, 165);
+    color: rgb(116, 22, 22);
+    border-radius: 0px 80px 80px 0px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    margin: 2em 10em;
+    gap: 20px;
+}
+
+.left-section, .right-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.left-section{
+    background-color: transparent;
+}
+
+.right-section {
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.added-items, .book-now-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 10px 0px;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.added-items{
+    padding: 5px 0px;
+}
+.email-phone{
+    display: flex;
+    gap:20px;
+}
+.added-items h3{
+    margin: 5px 0px;
+    text-align: center;
+}
+.added-items table {
+
+    width: 100%;
+    height: 200px;
+    border-collapse: collapse;
+}
+
+.added-items th{
+    padding: 10px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.added-items td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.total-amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+.book-now-form h3{
+    margin: 10px 0px;
+}
+
+.book-now-form input {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    margin: 10px 0px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.book-now-form input:first-of-type{
+    width: 98%;
+}
+
+label{
+    font-size: small;
+    font-weight: bold;
+}
+.book-now-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.book-now-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Right Section */
+#service-display {
+    text-align: center;
+}
+
+#service-display img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#service-display .service-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#service-display button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service-name{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.service-amt{
+   color: rgb(10, 10, 248);
+}
+
+.item-msg{
+    color: rgb(10, 10, 248);
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.add-btn {
+    background-color: #D0F0C0;
+    color: #4caf50;
+    font-size: medium;
+    font-weight: bold;
+    flex: 1;
+}
+
+.skip-btn {
+    background-color: #ffd4c4;
+    color: #f11e0f;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.no-item{
+    margin: 30px 0px;
+}
+.no-item p{
+    margin: 0%;
+}
+.no-item p:first-of-type{
+    font-size: larger;
+}
+
+.no-item p:last-of-type{
+    font-size: small;
+    color: rgba(78, 77, 77, 0.521);
+}
+
+.item-img{
+    width: 100%;
+    height: 250px;
+}
+
+hr{
+    color: #ddd;
+    border: 1px solid #ddd;
+}
+
+.hidden{
+    display: none;
+}
+
+.status-success{
+    color: rgb(3, 172, 3);
+}
+
+.status-error{
+    color: #f11e0f;
+}
+
+.book-status{
+    margin-top: 5px;
+}
